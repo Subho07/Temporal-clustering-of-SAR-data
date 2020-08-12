@@ -229,7 +229,7 @@ thre_mat_TM = ones(b,a);
 for i = 1:b
     for j = 1:a
         if ent(i,j)>0.5 && ent(i,j) <= 1
-            if theta(i,j) >-90 && theta(i,j) <-10
+            if theta(i,j) >=-90 && theta(i,j) <-10
                 thre_mat_TM(i,j) = 1;
             end
 			
@@ -240,12 +240,12 @@ for i = 1:b
                 thre_mat_TM(i,j) = 7;
             end
 
-            if theta(i,j) >20 && theta(i,j) <=90
+            if theta(i,j) >=20 && theta(i,j) <=90
                 thre_mat_TM(i,j) = 10;
             end
         end
         if ent(i,j)>0.3 && ent(i,j) <= 0.5
-             if theta(i,j) > -90 && theta(i,j) <-10
+             if theta(i,j) >=-90 && theta(i,j) <-10
                 thre_mat_TM(i,j) = 2;
             end
 
@@ -261,7 +261,7 @@ for i = 1:b
             end
         end
         
-        if ent(i,j)>0 && ent(i,j) <= 0.3
+        if ent(i,j)>=0 && ent(i,j) <= 0.3
              if theta(i,j) >= -90 && theta(i,j) <-10
                 thre_mat_TM(i,j) = 3;
             end
