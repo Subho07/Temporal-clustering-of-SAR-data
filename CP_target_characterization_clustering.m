@@ -207,7 +207,7 @@ thre_mat = ones(ncols,nrows);
 for i = 1:ncols
     for j = 1:nrows
         if ent(i,j)>0.5 && ent(i,j) <= 1
-            if theta(i,j) >-90 && theta(i,j) <-10
+            if theta(i,j) >=-90 && theta(i,j) <-10
                 thre_mat(i,j) = 1;
             end
 
@@ -219,7 +219,7 @@ for i = 1:ncols
                 thre_mat(i,j) = 7;
             end
 
-            if theta(i,j) >20 && theta(i,j) <=90
+            if theta(i,j) >=20 && theta(i,j) <=90
                 thre_mat(i,j) = 10;
             end
         end
