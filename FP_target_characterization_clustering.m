@@ -1,12 +1,8 @@
 clc; clear all; close all;
 
-% parpool(4);
-
 [fileName,FolderName] = uigetfile('*.*', 'Path selection Time 1');
 cd(FolderName);
 C = strsplit(FolderName,'\');
-% date = cell2mat(C(4));
-% date = 'r';
  
 config_ID = fopen(strcat(FolderName,'\','config.txt'),'rb');
 tline = fgetl(config_ID);
