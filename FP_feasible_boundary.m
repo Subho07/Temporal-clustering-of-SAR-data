@@ -109,12 +109,10 @@ gam1 = gam1(:);
 gam1 = deg2rad(gam1);
 ent1 = 1 - ent1;
 figure('Renderer', 'painters', 'Position', [0 -300 900 900])
-% polarplot(ent1,gam1,'LineWidth',4,'Color',[0,0,0])
 polarplot(gam1, ent1, 'LineWidth',2,'Color',[0,0,0])
 
 ax = gca;
 ax.ThetaZeroLocation = 'top';
-% d = ax.ThetaDir;
 ax.ThetaDir = 'clockwise';
 ax.RLim = [0,1];
 ax.ThetaLim = [-90 90];
@@ -141,32 +139,26 @@ B92 = zeros(501,1);
 k = 1;
 for m = 0.5:0.001:1
    T = [2*m-1,0,0;0,1,0;0,0,1];
-%     T = [0,0,0;0,1,0;0,0,2*m];
-%    gamma = atand((4*m^2-4*m-3)/(4*m^2+8*m-1));
     m1 = real(sqrt(1-(27*(det(T)./(trace(T).^3))))); % DOP Barakat
    
-%    gamma = atand((1-4*m^2)/(4*m^2+6*m+1));
     t11s = T(1,1);
     t22s = T(2,2);
     t33s = T(3,3);
    
    span = t11s + t22s + t33s;
-   %         g1 = abs(t12s)^2+abs(t13s)^2;
    h = (t11s - t22s - t33s);
-   %         h1 = (t11s + g1 - t22s - t33s);
    g = (t22s + t33s);
         
    val = (m1.*span.*h)./(t11s.*g+m1.^2.*span.^2);
    
    val = atand(val);
-%    gam1(k,1) = gamma;
    
    val1 = 2*val;
    if val1 < -90
        val1 = -90;
    end
     gam2(k,1) = val1;
-%    gam2(k,1) = gamma;
+
    %entropy
         [evec_v, eval] = eig(T);
         
@@ -241,13 +233,8 @@ end
 gam2 = gam2(:);
 gam2 = deg2rad(gam2);
 ent2 = 1 - ent2;
-% figure('Renderer', 'painters', 'Position', [0 -300 900 900])
 polarplot(gam2,ent2,'LineWidth',2,'Color',[0,0,0])
-% plot(ent2,gam2,'LineWidth',4,'Color',[0,0,0])
 
-% ent3 = linspace(0,0.6369)';
-% gam5 = repelem(-44.86,100)';
-% plot(ent3,gam5,'LineWidth',3,'Color',[0,0,0])
 
 const_gam = deg2rad(-90);
 gam5 = repelem(const_gam,100)';
