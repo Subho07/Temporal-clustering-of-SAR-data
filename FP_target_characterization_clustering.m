@@ -200,6 +200,8 @@ Fold = strcat(FolderName,'\','Theta_SAR_clustering\');
 
 hold off
 %%
+date = 'data'; % change it with date if you have time series data
+
 disp('Saving as bin file')
 f_name_100 = char(strcat('theta_',date,'.bin'));
 fileandpath_100=f_name_100;
