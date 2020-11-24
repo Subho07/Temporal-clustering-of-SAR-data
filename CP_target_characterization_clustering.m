@@ -177,7 +177,7 @@ caxis([-90 90]);
 
 C = strsplit(path,'\');
 
-date = 'data';
+date = 'data'; % change it with date if you have time series data
 file1 =  char(strcat('theta_HYB_',date));
 saveas(fig1,file1,'png')
 saveas(fig1,file1,'fig')
