@@ -29,7 +29,7 @@ and,
   <img src="clustering_unsupervised.png" alt="CLustering"/>
 </p>
 
-The shaded areas are non-feasible regions.
+The shaded areas are non-feasible regions. Please follow this article for more details:  https://doi.org/10.1016/j.isprsjprs.2020.09.010.
 
 ## Up and running
 This is a `MATLAB` based code. To run the code the coherency matrix elements (`T3`) for `FP` and covariance matrix elements (`C2`) for `CP` are required.
