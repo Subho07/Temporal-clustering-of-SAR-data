@@ -43,7 +43,7 @@ In addition to this for CP:
 - Please specify the Chi value for processing: for right circular transmit it is -45 and for left circular transmit it is +45
 - Please specify the Psi for processing: for CP it is 0
 
-- Please use `FP_target_characterization_clustering.m` or, `CP_target_characterization_clustering.m` to perform unsupervised clustering of FP or, CP data.
+- Please use `FP_target_characterization_clustering.m` or, `CP_target_characterization_clustering.m` to perform unsupervised clustering of FP or, CP data, respectively.
 ## References
 
 - S. Dey, A. Bhattacharya, D. Ratha, D. Mandal and A. C. Frery, "Target Characterization and Scattering Power Decomposition for Full and Compact Polarimetric SAR Data," in IEEE Transactions on Geoscience and Remote Sensing, doi: https://doi.org/10.1109/TGRS.2020.3010840
