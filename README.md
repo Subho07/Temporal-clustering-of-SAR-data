@@ -3,7 +3,7 @@
 ![DOI](https://img.shields.io/badge/DOI-https%3A%2F%2Fdoi.org%2F10.1016%2Fj.isprsjprs.2020.09.010-brightgreen)
 
 ## General information
-This package performs an unsupervised clustering using the parameters  ![mfp](https://latex.codecogs.com/svg.latex?\theta_{\text{FP}}), ![mfp](https://latex.codecogs.com/svg.latex?H_{\text{FP}}) for FP and ![mcp](https://latex.codecogs.com/svg.latex?\theta_{\text{CP}}), ![mcp](https://latex.codecogs.com/svg.latex?H_{\text{CP}}) for CP data. ![mfp](https://latex.codecogs.com/svg.latex?\theta_{\text{FP}}) and ![mcp](https://latex.codecogs.com/svg.latex?\theta_{\text{CP}}) are the target charactization parameters for FP and CP data, given as,
+This code performs an unsupervised clustering using the parameters  ![mfp](https://latex.codecogs.com/svg.latex?\theta_{\text{FP}}), ![mfp](https://latex.codecogs.com/svg.latex?H_{\text{FP}}) for FP and ![mcp](https://latex.codecogs.com/svg.latex?\theta_{\text{CP}}), ![mcp](https://latex.codecogs.com/svg.latex?H_{\text{CP}}) for CP data. ![mfp](https://latex.codecogs.com/svg.latex?\theta_{\text{FP}}) and ![mcp](https://latex.codecogs.com/svg.latex?\theta_{\text{CP}}) are the target charactization parameters for FP and CP data, given as,
 
 ![tfp](https://latex.codecogs.com/svg.latex?\tan(\dfrac{\theta_{\text{FP}}}{2})=\frac{m_{\text{FP}}{\text{Span}}\left(T_{11}-T_{22}-T_{33}\right)}{T_{11}\left(T_{22}+T_{33}\right)+m_{\text{FP}}^{2}{\text{Span}}^{2})
 
