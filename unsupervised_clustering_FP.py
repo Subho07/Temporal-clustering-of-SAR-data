@@ -2,7 +2,9 @@
 """
 Created on Wed Apr 21 15:07:54 2021
 
-@author: Subhadip_CSRE
+@authors: Subhadip Dey and Narayanarao Bhogapurapu
+@email: sdey2307@gmail.com
+@institute: Indian Institute of Technology Bombay
 """
 
 from osgeo import gdal
