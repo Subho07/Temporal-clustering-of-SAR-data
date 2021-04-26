@@ -103,7 +103,9 @@ for i in np.arange(low_val+1, high_val+1):
 im_ratio = cluster_img.shape[0]/cluster_img.shape[1]
 
 fig = plt.figure(figsize=(10,8))
-plt.imshow(cluster_img, cmap = mymap)
+plt.imshow(cluster_img, 
+           vmin=1,vmax=12,
+           cmap = mymap)
 cbar = mpl.pyplot.colorbar(fraction=0.047*im_ratio)
 #cbar.set_ticks([1.4, 1.24, 2.04, 2.88, 3.84, 4.64, 5.44, 6.24, 7.14, 7.94, 8.74, 9.54])
 cbar.set_ticks(num_list)
